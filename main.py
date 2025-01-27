@@ -7,6 +7,7 @@ def my_decorator(func: Callable) -> Callable:
 
         a = a[:4]
         print(a)
+
     return wrapper
 
 @my_decorator
