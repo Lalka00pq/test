@@ -4,6 +4,7 @@ from typing import Callable
 def my_decorator(func: Callable) -> Callable:
     def wrapper():
         a = func()
+
         a = a[:4]
         print(a)
     return wrapper
